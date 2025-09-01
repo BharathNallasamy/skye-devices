@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "git": "git add . && git commit -m 'update' && git push",
+    "predeploy": "ng build --configuration production --base-href https://hasnatech.github.io/mpa-RightSource/v2/",
+    "deploy": "gh-pages -d dist/mpa-RightSource",
+    "upload": "ng build --configuration production --base-href ./"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +37,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "tailwindcss": "^3.4.17",
     "typescript": "~5.1.3"
   }
 }
