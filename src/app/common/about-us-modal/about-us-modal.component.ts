@@ -11,7 +11,7 @@ import {
   templateUrl: './about-us-modal.component.html',
   styleUrls: ['./about-us-modal.component.scss'],
 })
-export class AboutUsModalComponent {
+export class AboutUsModalComponent implements OnInit, OnDestroy {
   @Output() close = new EventEmitter<void>();
 
   ngOnInit(): void {
