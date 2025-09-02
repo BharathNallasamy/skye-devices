@@ -11,6 +11,7 @@
   align-items: center; /* centers vertically */
   z-index: 1000;
   backdrop-filter: blur(2px); /* optional dull effect */
+  color: #555555;
 }
 
 /* Modal box */
@@ -41,7 +42,7 @@
   text-align: left;
   color: #1d70b8;
   font-size: 32px;
-  margin: 30px 0px 20px;
+  margin: 30px 0px 10px;
 }
 
 /* Product diagram layout */
