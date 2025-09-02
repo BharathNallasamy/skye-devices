@@ -1,1 +1,17 @@
-<p>image-text-dispay2 works!</p>
+<div class="black_border">
+    <div class="container">
+        <div class="top-text">
+            {{contents2.top_text}}
+        </div>
+        <div class="image-box">
+            <img class="image" [src]="contents2.imageUrl" alt="content image" />
+        </div>
+
+        <div class="text-box">
+            <div class="texts">
+                <h3 *ngIf="contents2.title" class="title">{{ contents2.title }}</h3>
+                <p *ngFor="let para of contents2.description" [innerHTML]="para"></p>
+            </div>
+        </div>
+    </div>
+</div>

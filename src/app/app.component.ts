@@ -12,9 +12,6 @@ export class AppComponent {
     'assets/images/Image_Page_7.jpg',
   ];
 
-  // current page index
-  currentImage: number = 0;
-
   contents = [
     {
       imageUrl: 'assets/images/2hours.png',
@@ -77,6 +74,28 @@ export class AppComponent {
         'Skye isn’t here to teach you how to meditate. What it does is help you carry that same clear and present state of mind into the rest of your day.',
         '<b>On average, people spend almost 1/2 of their waking hours with wandering minds.</b>',
         'It is like taking the calm you find on the mat or cushion and keeping it with you, whether you are at work, at home, or just moving through your day.',
+      ],
+    },
+  ];
+
+  contents2 = [
+    {
+      top_text: 'us against them.',
+      imageUrl: 'assets/images/Image_Page_1.png',
+      imageLabel: '2 hours',
+      title: '',
+      description: [
+        'Technology was meant to save us time and make life easier so we could focus on what matters most. Instead, it has done the opposite. The best engineers in the world work day and night to make you use the technology longer because every extra minute you give them makes them more money. It’s not your fault. You’ve been outnumbered, out-coded, and out-engineered.',
+        'Skye is your counter-move. Skye keeps you aware. Skye keeps you focused. Skye keeps you in control. Time is your most valuable asset. <b>Do not let them steal it to make their billions.</b>',
+      ],
+    },
+    {
+      top_text: 'how skye helps?',
+      imageUrl: 'assets/images/Image_Page_6.png',
+      imageLabel: '2 hours',
+      title: '',
+      description: [
+        'This happens to all of us. We start focused, but slowly drift into distractions without noticing. Without Skye, these small distractions can stretch on before we get back on track. With Skye, gentle vibrations nudge you back in time, so you can spend more of your day on what truly matters.',
       ],
     },
   ];
