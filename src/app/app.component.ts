@@ -39,33 +39,44 @@ export class AppComponent {
       ],
     },
     {
-      imageUrl: 'assets/images/students.png',
+      imageUrl: 'assets/images/Image_Page_8.png',
       imageLabel: 'students',
       title: 'got skye?',
       description: [
-        'Have you seen your kids lose focus while studying...',
+        'Have you seen your kids lose focus while studying, spending time drifting from one task to another instead of getting work done?',
         '<b>On average, students lose more than 25 percent of their study time to distractions.</b>',
-        'Skye gently nudges them back before they drift too far...',
+        'For those preparing for competitive exams, that lost time can be a lost opportunity.',
+        'Skye gently nudges them back before they drift too far, helping them stay on track, finish faster, and make every study session count.',
       ],
     },
     {
-      imageUrl: 'assets/images/professionals.png',
+      imageUrl: 'assets/images/Image_Page_9.png',
       imageLabel: 'working professionals',
       title: 'got skye?',
       description: [
-        'Have you ever sat down to get work done...',
+        'Have you ever sat down to get work done, only to be pulled away by emails, messages, or little distractions?',
         '<b>Research shows it actually takes about 23 minutes to get fully back into focus after being distracted.</b>',
-        'Skye helps you set focused blocks of time and protect your attention...',
+        'Skye helps you set focused blocks of time and protect your attention, so you can get real work done, make steady progress on projects, and still have energy left to enjoy your evening.',
       ],
     },
     {
-      imageUrl: 'assets/images/mindfulness.png',
+      imageUrl: 'assets/images/Image_Page_10.png',
+      imageLabel: 'creatives',
+      title: 'got skye?',
+      description: [
+        'As a creative, whether you make music, write books, paint, or create videos, you know how important focus is and how easily you can lose it.',
+        '<b>Studies show creative people lose over 30 percent of their potential work time to interruptions, which can really slow down progress.</b>',
+        'Skye quietly keeps you anchored in the process, helping your ideas stay alive, your projects move forward, and the work you imagined actually come to life.',
+      ],
+    },
+    {
+      imageUrl: 'assets/images/Image_Page_11.png',
       imageLabel: 'mindfulness enthusiasts',
       title: 'got skye?',
       description: [
-        'Skye isn’t here to teach you how to meditate...',
+        'Skye isn’t here to teach you how to meditate. What it does is help you carry that same clear and present state of mind into the rest of your day.',
         '<b>On average, people spend almost 1/2 of their waking hours with wandering minds.</b>',
-        'It is like taking the calm you find on the mat or cushion and keeping it with you...',
+        'It is like taking the calm you find on the mat or cushion and keeping it with you, whether you are at work, at home, or just moving through your day.',
       ],
     },
   ];
