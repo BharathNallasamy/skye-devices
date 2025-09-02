@@ -7,11 +7,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-product-spec-modal',
-  templateUrl: './product-spec-modal.component.html',
-  styleUrls: ['./product-spec-modal.component.scss'],
+  selector: 'app-about-us-modal',
+  templateUrl: './about-us-modal.component.html',
+  styleUrls: ['./about-us-modal.component.scss'],
 })
-export class ProductSpecModalComponent implements OnInit, OnDestroy {
+export class AboutUsModalComponent {
   @Output() close = new EventEmitter<void>();
 
   ngOnInit(): void {

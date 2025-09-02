@@ -12,6 +12,8 @@ import { ImageTextDisplayComponent } from './common/image-text-display/image-tex
 import { ImageDispay2Component } from './common/image-dispay2/image-dispay2.component';
 import { ImageTextDispay2Component } from './common/image-text-dispay2/image-text-dispay2.component';
 import { ProductSpecModalComponent } from './common/product-spec-modal/product-spec-modal.component';
+import { AboutUsModalComponent } from './common/about-us-modal/about-us-modal.component';
+import { PreOrderingModalComponent } from './common/pre-ordering-modal/pre-ordering-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProductSpecModalComponent } from './common/product-spec-modal/product-s
     ImageTextDisplayComponent,
     ImageDispay2Component,
     ImageTextDispay2Component,
-    ProductSpecModalComponent
+    ProductSpecModalComponent,
+    AboutUsModalComponent,
+    PreOrderingModalComponent
   ],
   imports: [
     BrowserModule,

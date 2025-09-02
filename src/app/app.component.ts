@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  showModal = false;
+  aboutModal = false;
+
   images: string[] = [
     'assets/images/Image_Page_2.jpeg',
     'assets/images/Image_Page_4.jpg',

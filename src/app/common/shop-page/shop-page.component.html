@@ -17,7 +17,7 @@
 
         <!-- Right Side -->
         <div class="right-section">
-            <p class="special">Special price valid for a limited time</p>
+            <p class="special cursor-pointer" (click)="preOrder = true">Special price valid for a limited time</p>
             <div>
                 <h2 class="title">Skye</h2>
                 <p class="price">Rs. 4900.00</p>
@@ -31,9 +31,12 @@
             <p class="delivery-title">Estimated deliveries for pre-orders:</p>
             <p class="delivery-date">December, 2025</p>
 
-            <a href="#" class="link">View full specifications</a>
+            <a href="#" class="link" (click)="showModal = true">View full specifications</a>
 
             <button class="preorder-btn">pre-order</button>
         </div>
     </div>
+
 </div>
+<app-product-spec-modal *ngIf="showModal" (close)="showModal = false"></app-product-spec-modal>
+<app-pre-ordering-modal *ngIf="preOrder" (close)="preOrder = false"></app-pre-ordering-modal>
