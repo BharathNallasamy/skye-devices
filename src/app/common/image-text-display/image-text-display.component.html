@@ -1,0 +1,17 @@
+<div class="black_border">
+    <div class="container">
+        <div class="image-box">
+            <img class="image" [src]="content.imageUrl" alt="content image" />
+            <div class="image-text" *ngIf="content.imageLabel">
+                {{ content.imageLabel }}
+            </div>
+        </div>
+
+        <div class="text-box">
+            <div class="texts">
+                <h3 *ngIf="content.title" class="title">{{ content.title }}</h3>
+                <p *ngFor="let para of content.description" [innerHTML]="para"></p>
+            </div>
+        </div>
+    </div>
+</div>
