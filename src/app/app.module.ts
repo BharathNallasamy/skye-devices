@@ -14,6 +14,7 @@ import { ImageTextDispay2Component } from './common/image-text-dispay2/image-tex
 import { ProductSpecModalComponent } from './common/product-spec-modal/product-spec-modal.component';
 import { AboutUsModalComponent } from './common/about-us-modal/about-us-modal.component';
 import { PreOrderingModalComponent } from './common/pre-ordering-modal/pre-ordering-modal.component';
+import { FooterModalComponent } from './common/footer-modal/footer-modal.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PreOrderingModalComponent } from './common/pre-ordering-modal/pre-order
     ImageTextDispay2Component,
     ProductSpecModalComponent,
     AboutUsModalComponent,
-    PreOrderingModalComponent
+    PreOrderingModalComponent,
+    FooterModalComponent
   ],
   imports: [
     BrowserModule,

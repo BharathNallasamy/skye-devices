@@ -1,0 +1,45 @@
+.modal-backdrop {
+  position: fixed; /* stays fixed on screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #fff;
+  width: 80%;
+  max-width: 90%;
+  padding: 20px 30px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 90vh;
+  color: #555555;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-content {
+  margin-top: 1rem;
+}
+
+h2.modal-title {
+  text-align: left;
+  color: #1d70b8;
+  font-size: 32px;
+  margin: 30px 0px 10px;
+}

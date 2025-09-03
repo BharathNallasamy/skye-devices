@@ -14,3 +14,11 @@ body {
 b.light-blue {
   color: #1d70b8 !important;
 }
+
+.ul_list {
+  margin-left: 30px;
+
+  .list {
+    list-style-type: disc;
+  }
+}

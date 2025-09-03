@@ -11,18 +11,22 @@
 
     <!-- Middle Navigation Links -->
     <div class="nav-links">
-        <a href="#">contact us</a>
-        <a href="#">faq</a>
-        <a href="#">email</a>
-        <a href="#">instagram</a>
-        <a href="#">linkedin</a>
+        <button type="button" class="linklike" (click)="openModal('contactUs')">contact us</button>
+        <button type="button" class="linklike" (click)="openModal('faq')">faq</button>
+        <button type="button" class="linklike">email</button>
+        <button type="button" class="linklike">instagram</button>
+        <button type="button" class="linklike">linkedin</button>
     </div>
 
     <!-- Footer Links -->
     <div class="footer-links">
-        <a href="#">terms & conditions</a>
-        <a href="#">privacy policy</a>
-        <a href="#">cancellation & refund policy</a>
-        <a href="#">shipping & delivery policy</a>
+        <button type="button" class="linklike" (click)="openModal('terms')">terms & conditions</button>
+        <button type="button" class="linklike" (click)="openModal('privacy')">privacy policy</button>
+        <button type="button" class="linklike" (click)="openModal('refund')">cancellation & refund policy</button>
+        <button type="button" class="linklike" (click)="openModal('shipping')">shipping & delivery policy</button>
     </div>
+
 </div>
+
+<app-footer-modal [isOpen]="modalOpen" [title]="modalTitle" [content]="modalContent"
+    (close)="closeModal()"></app-footer-modal>

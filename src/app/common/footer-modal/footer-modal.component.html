@@ -1,0 +1,9 @@
+<div class="modal-backdrop" *ngIf="isOpen">
+    <div class="modal">
+        <button class="close-btn" (click)="onClose()">
+            <img src="assets/images/close_btn.png" alt="colse_btn">
+        </button>
+        <h2 class="modal-title">{{ title }}</h2>
+        <div class="modal-content" [innerHTML]="content"></div>
+    </div>
+</div>
