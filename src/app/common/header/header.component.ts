@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  menuOpen = false; // <-- add this line
+  menuOpen = false;
+  aboutModal = false;
+  instagramUpdatesUrl = 'https://www.linkedin.com/company/skye-devices/';
 
-  aboutModal = false; // since you're also toggling this in your HTML
+  openLink(url: string) {
+    window.open(url, '_blank');
+  }
 }

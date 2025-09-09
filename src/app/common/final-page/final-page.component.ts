@@ -308,4 +308,17 @@ export class FinalPageComponent {
   closeModal() {
     this.modalOpen = false;
   }
+
+  instagramUrl: string =
+    'https://www.instagram.com/skye.devices?igsh=Z29yaXkwbnRhaDlt&utm_source=qr';
+  linkedinUrl: string = 'https://www.linkedin.com/company/skye-devices/';
+  emailAddress: string = 'skyedevices@outlook.com';
+
+  openLink(url: string) {
+    window.open(url, '_blank');
+  }
+
+  openEmail() {
+    window.open(`mailto:${this.emailAddress}`, '_self');
+  }
 }

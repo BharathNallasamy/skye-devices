@@ -13,9 +13,9 @@
     <div class="nav-links">
         <button type="button" class="linklike" (click)="openModal('contactUs')">contact us</button>
         <button type="button" class="linklike" (click)="openModal('faq')">faq</button>
-        <button type="button" class="linklike">email</button>
-        <button type="button" class="linklike">instagram</button>
-        <button type="button" class="linklike">linkedin</button>
+        <a href="mailto:skyedevices@outlook.com" class="linklike">email</a>
+        <button type="button" class="linklike" (click)="openLink(instagramUrl)">instagram</button>
+        <button type="button" class="linklike" (click)="openLink(linkedinUrl)">linkedin</button>
     </div>
 
     <!-- Footer Links -->
