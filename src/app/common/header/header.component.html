@@ -1,14 +1,3 @@
-<!-- <div class="fixed top-0 left-0 w-full flex justify-between items-center mb-2 px-5 md:px-16 py-2 bg-white z-50">
-    <div>
-        <p class="celtic-blue">SKYE</p>
-    </div>
-    <div class="flex items-center gap-5">
-        <p class="cursor-pointer" (click)="openLink(instagramUpdatesUrl)">updates</p>
-        <p class="cursor-pointer" (click)="aboutModal = true">about us</p>
-        <p class="celtic-blue cursor-pointer">shop</p>
-    </div>
-</div> -->
-
 <div class="fixed top-0 left-0 w-full flex justify-between items-center px-5 md:px-16 py-2 bg-white z-50">
     <!-- Logo -->
     <div>
@@ -17,7 +6,7 @@
 
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center gap-5">
-        <p class="cursor-pointer" (click)="openLink(instagramUpdatesUrl)">updates</p>
+        <p class="cursor-pointer updates" (click)="openLink(instagramUpdatesUrl)">updates</p>
         <p class="cursor-pointer" (click)="aboutModal = true">about us</p>
         <p class="celtic-blue cursor-pointer">shop</p>
     </div>
@@ -35,7 +24,7 @@
 
     <!-- Mobile Menu (Dropdown) -->
     <div *ngIf="menuOpen"
-        class="absolute top-14 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
+        class="absolute top-[38px] left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
         <p class="cursor-pointer" (click)="openLink(instagramUpdatesUrl); menuOpen = false">updates</p>
         <p class="cursor-pointer" (click)="aboutModal = true; menuOpen = false">about us</p>
         <p class="celtic-blue cursor-pointer" (click)="menuOpen = false">shop</p>

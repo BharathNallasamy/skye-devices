@@ -1,5 +1,17 @@
 .celtic-blue {
-  background-color: #1d70b8;
-  color: #fff;
-  padding: 10px 20px;
+  color: #1d70b8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe81a;
+  color: #272727;
+  border-radius: 7px;
+  border: 2px solid #fff175;
+  padding: 5px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }

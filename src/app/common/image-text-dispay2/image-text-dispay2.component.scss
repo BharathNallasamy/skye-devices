@@ -52,6 +52,11 @@
   margin-bottom: 10px;
 }
 
+.top-text {
+  color: #0056b3;
+  font-weight: 700;
+}
+
 p {
   margin: 5px 0;
   line-height: 1.5;
@@ -67,7 +72,7 @@ p {
     flex-direction: column;
   }
 
-   .text-box {
+  .text-box {
     .texts {
       width: 100%;
     }
@@ -75,5 +80,26 @@ p {
 
   .image-box {
     width: 100%;
+  }
+  
+}
+
+/* Desktop first top-text */
+.top-text.desktop {
+  display: block; /* visible on desktop */
+}
+
+/* Mobile second top-text */
+.top-text.mobile {
+  display: none; /* hidden by default */
+}
+
+/* Mobile breakpoint (adjust as needed, e.g., 768px) */
+@media (max-width: 767px) {
+  .top-text.desktop {
+    display: none; /* hide on mobile */
+  }
+  .top-text.mobile {
+    display: block; /* show on mobile */
   }
 }
