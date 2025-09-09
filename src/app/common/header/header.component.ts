@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  aboutModal = false;
+  menuOpen = false; // <-- add this line
+
+  aboutModal = false; // since you're also toggling this in your HTML
 }

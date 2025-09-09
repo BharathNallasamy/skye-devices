@@ -1,6 +1,6 @@
 .first-container {
-  height: calc(100vh - 5vh);
-  width: calc(100vw - 2.3vh);
+  height: 100%;
+  width: 100%;
   //   height: 100vh;
   //   width: 100vw;
   background: url("../../../assets/images/Final_BG.jpg") no-repeat center
@@ -47,31 +47,11 @@
   text-decoration: underline;
 }
 
-/* Footer Links */
-// .footer-links {
-//   display: flex;
-//   gap: 2rem;
-//   font-size: 0.9rem;
-//   margin-bottom: 1rem;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-// .footer-links a {
-//   color: #fff;
-//   text-decoration: none;
-// }
-
-// .footer-links a:hover {
-//   text-decoration: underline;
-// }
-
 .linklike {
   margin-right: 20px;
   background: none;
   border: 0;
   color: #fff;
-  // font: inherit;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
@@ -79,4 +59,11 @@
 
 .linklike:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

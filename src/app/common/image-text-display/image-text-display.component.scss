@@ -1,6 +1,6 @@
 .black_border {
   border: 2px solid #000;
-  width: 98.85vw;
+  width: 100%;
   height: 92vh;
   display: flex;
   align-items: center;
@@ -58,4 +58,28 @@
 p {
   margin: 5px 0;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .black_border {
+    height: 100%; /* Let content decide height on small screens */
+    padding: 1rem; /* Add some spacing inside */
+    // flex-direction: column; /* Stack content vertically if needed */
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .image-box {
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .image-text {
+    font-size: 20px;
+    width: 100%;
+  }
 }
