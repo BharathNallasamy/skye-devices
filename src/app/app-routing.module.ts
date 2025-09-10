@@ -6,7 +6,7 @@ import { ShopPageComponent } from './common/shop-page/shop-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'home', component: FinalPageComponent },
+  { path: 'home', component: HomePageComponent },
   { path: 'shop', component: ShopPageComponent },
 ];
 

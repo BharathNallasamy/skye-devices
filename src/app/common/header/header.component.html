@@ -8,7 +8,7 @@
     <div class="hidden md:flex items-center gap-5">
         <p class="cursor-pointer updates" (click)="openLink(instagramUpdatesUrl)">updates</p>
         <p class="cursor-pointer" (click)="aboutModal = true">about us</p>
-        <p class="celtic-blue cursor-pointer">shop</p>
+        <p class="celtic-blue cursor-pointer" routerLink="shop">shop</p>
     </div>
 
     <!-- Mobile Hamburger -->
@@ -27,7 +27,7 @@
         class="absolute top-[38px] left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
         <p class="cursor-pointer" (click)="openLink(instagramUpdatesUrl); menuOpen = false">updates</p>
         <p class="cursor-pointer" (click)="aboutModal = true; menuOpen = false">about us</p>
-        <p class="celtic-blue cursor-pointer" (click)="menuOpen = false">shop</p>
+        <p class="celtic-blue cursor-pointer" routerLink="shop" (click)="menuOpen = false">shop</p>
     </div>
 </div>
 

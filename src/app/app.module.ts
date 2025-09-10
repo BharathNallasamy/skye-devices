@@ -15,6 +15,7 @@ import { ProductSpecModalComponent } from './common/product-spec-modal/product-s
 import { AboutUsModalComponent } from './common/about-us-modal/about-us-modal.component';
 import { PreOrderingModalComponent } from './common/pre-ordering-modal/pre-ordering-modal.component';
 import { FooterModalComponent } from './common/footer-modal/footer-modal.component';
+import { FirstPageComponent } from './common/first-page/first-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterModalComponent } from './common/footer-modal/footer-modal.compone
     ProductSpecModalComponent,
     AboutUsModalComponent,
     PreOrderingModalComponent,
-    FooterModalComponent
+    FooterModalComponent,
+    FirstPageComponent
   ],
   imports: [
     BrowserModule,
