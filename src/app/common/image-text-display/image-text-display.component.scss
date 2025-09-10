@@ -4,6 +4,7 @@
   height: 86%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #fff;
 }
 
@@ -37,7 +38,7 @@
   font-size: 28px;
   font-weight: bold;
   transform: translate(-50%, -50%);
-  width: 45%;
+  width: 40%;
   text-align: center;
 }
 
@@ -62,9 +63,10 @@ p {
 
 @media (max-width: 768px) {
   .black_border {
-    height: 90%; /* Let content decide height on small screens */
-    padding: 1rem; /* Add some spacing inside */
-    // flex-direction: column; /* Stack content vertically if needed */
+    height: 86%;
+    padding: 1rem;
+    overflow-y: scroll;
+    padding-top: 4rem;
   }
 
   .container {

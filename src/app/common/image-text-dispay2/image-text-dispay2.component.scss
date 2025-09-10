@@ -4,6 +4,7 @@
   height: 86%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #fff;
 }
 
@@ -64,8 +65,9 @@ p {
 
 @media (max-width: 768px) {
   .black_border {
-    height: 90%;
+    height: 86%;
     padding: 1rem;
+    overflow-y: scroll;
   }
 
   .container {
@@ -81,7 +83,6 @@ p {
   .image-box {
     width: 100%;
   }
-  
 }
 
 /* Desktop first top-text */

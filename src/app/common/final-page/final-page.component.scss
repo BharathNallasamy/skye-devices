@@ -1,8 +1,6 @@
 .first-container {
-  height: 100%;
+  height: 86%;
   width: 100%;
-  //   height: 100vh;
-  //   width: 100vw;
   background: url("../../../assets/images/Final_BG.jpg") no-repeat center
     center/cover;
   display: flex;
@@ -10,8 +8,8 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  //   text-align: center;
   padding: 2rem;
+  margin-top: 60px;
 }
 
 /* Quote */
@@ -65,6 +63,10 @@
   .nav-links {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+  }
+
+  .footer-links {
     text-align: center;
   }
 }
