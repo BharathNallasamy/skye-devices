@@ -3,17 +3,25 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent {
-
   showModal = false;
   aboutModal = false;
 
-  images: string[] = [
-    'assets/images/Image_Page_2.png',
-    'assets/images/Image_Page_4.png',
-    'assets/images/Image_Page_7.jpg',
+  images = [
+    {
+      desktop: 'assets/images/Image_Page_2.png',
+      mobile: 'assets/images/Image_Page_2_mob.png',
+    },
+    {
+      desktop: 'assets/images/Image_Page_4.png',
+      mobile: 'assets/images/Image_Page_4_mob.png',
+    },
+    {
+      desktop: 'assets/images/Image_Page_7.jpg',
+      mobile: 'assets/images/Image_Page_7_mob.png',
+    },
   ];
 
   contents = [

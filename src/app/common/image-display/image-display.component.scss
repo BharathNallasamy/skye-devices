@@ -11,9 +11,20 @@
   height: 100%;
 }
 
+.mobile-img {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .page-image {
     width: 100vw;
     height: 86vh;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
   }
 }

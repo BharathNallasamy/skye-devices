@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./image-display.component.scss'],
 })
 export class ImageDisplayComponent {
-  @Input() imageUrl!: string; // receives single image path
+  @Input() image!: { desktop: string; mobile: string }; // receives single image path
 }
