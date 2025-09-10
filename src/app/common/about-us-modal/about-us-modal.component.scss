@@ -1,6 +1,5 @@
-/* Overlay */
 .modal-overlay {
-  position: fixed;
+  position: fixed; /* fixed so it covers the viewport */
   top: 0;
   left: 0;
   width: 100%;
@@ -8,25 +7,36 @@
   background: rgba(0,0,0,0.4);
   display: flex;
   justify-content: center;
-  align-items: center; /* centers vertically */
+  align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(2px); /* optional dull effect */
+  backdrop-filter: blur(2px);
   color: #555555;
 }
 
-/* Modal box */
 .modal-container {
   background: #fff;
   width: 80%;
   max-width: 90%;
-  padding: 20px 30px;
   position: relative;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  overflow-y: auto;
   max-height: 90vh;
+
+  display: flex;
+  flex-direction: column; /* header + body layout */
 }
 
-/* Close button */
+.modal-header {
+  position: relative;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.modal-body {
+  flex: 1; /* take remaining height */
+  overflow-y: auto; /* only body scrolls */
+  padding: 20px;
+}
+
 .close-btn {
   position: absolute;
   right: 15px;
@@ -35,6 +45,7 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
+  z-index: 10;
 }
 
 /* Title */
