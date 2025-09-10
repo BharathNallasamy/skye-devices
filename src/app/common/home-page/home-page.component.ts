@@ -11,8 +11,8 @@ export class HomePageComponent {
   aboutModal = false;
 
   images: string[] = [
-    'assets/images/Image_Page_2.jpeg',
-    'assets/images/Image_Page_4.jpg',
+    'assets/images/Image_Page_2.png',
+    'assets/images/Image_Page_4.png',
     'assets/images/Image_Page_7.jpg',
   ];
 
