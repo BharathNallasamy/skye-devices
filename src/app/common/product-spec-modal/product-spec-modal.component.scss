@@ -91,3 +91,9 @@
     height: 231px;
   }
 }
+
+@media (max-width: 768px) {
+  .product-diagram {
+    flex-direction: column;
+  }
+}

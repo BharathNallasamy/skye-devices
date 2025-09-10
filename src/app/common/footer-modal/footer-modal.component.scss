@@ -1,46 +1,111 @@
-.modal-backdrop {
-  position: fixed; /* stays fixed on screen */
-  top: 0;
+.modal-overlay {
+  position: fixed; /* fixed so it covers the viewport */
+  top: 20px;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2000;
   backdrop-filter: blur(2px);
-}
-
-.modal {
-  background: #fff;
-  width: 80%;
-  max-width: 90%;
-  padding: 20px 30px;
-  position: relative;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  overflow-y: auto;
-  max-height: 80vh;
   color: #555555;
 }
 
-.close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+.modal-container {
+  background: #fff;
+  width: 80%;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column; /* header + body layout */
 }
 
-.modal-content {
-  margin-top: 1rem;
-}
-
-h2.modal-title {
+.modal-title {
   text-align: left;
   color: #1d70b8;
   font-size: 32px;
   margin: 30px 0px 10px;
+  // font-weight: bold;
+}
+
+.modal-header {
+  position: relative;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.modal-body {
+  flex: 1; /* take remaining height */
+  overflow-y: auto; /* only body scrolls */
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #1d70b8;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Product diagram layout */
+.product-diagram {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.diagram-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Specs section */
+.specs h3 {
+  text-align: center;
+  margin: 10px 0px 10px;
+  font-weight: bold;
+}
+
+.specs ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.specs li {
+  margin-bottom: 6px;
+}
+
+.specs strong {
+  font-weight: bold;
+}
+
+.diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .front-back-image {
+    height: 231px;
+  }
 }
