@@ -33,3 +33,40 @@
     margin-top: 60px;
   }
 }
+
+
+// Scroll Indicator
+.scroll-indicator {
+  position: fixed;           /* stays at bottom center */
+  left: 50%;
+  bottom: 150px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;       /* not clickable */
+  opacity: 0.9;
+}
+
+.scroll-indicator .chevron {
+  width: 100%;
+  height: 100%;
+  animation: bounce 1.6s ease-in-out infinite;
+}
+
+/* Smooth bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(8px); }
+  60% { transform: translateY(4px); }
+}
+
+/* Smaller on mobile */
+@media (max-width: 640px) {
+  .scroll-indicator {
+    width: 32px;
+    height: 32px;
+    bottom: 150px;
+  }
+}

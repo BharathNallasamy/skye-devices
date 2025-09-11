@@ -5,8 +5,7 @@
 .overlap {
   position: sticky;
   top: 60px;
-  height: 100vh; /* each section fills viewport */
-  z-index: 1;
+  height: calc(100vh - 50px);
 }
 
 /* Layering effect: higher index comes first */
