@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 86%;
+  height: 80%;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -26,4 +26,10 @@
   position: absolute;
   bottom: calc(100vh - 550px);
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .image-container2 {
+    height: 86%;
+  }
 }

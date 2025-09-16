@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 86%;
+  height: 80%;
   width: 100%;
   overflow: hidden;
 }
@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 768px) {
+  .image-container {
+    height: 86%;
+  }
   .page-image {
     width: 100vw;
     height: 86vh;

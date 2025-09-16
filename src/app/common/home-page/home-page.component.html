@@ -1,4 +1,4 @@
-<div class="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 2xl:px-60">
+<div class="px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60 2xl:px-72">
     <app-header></app-header>
   
     <div class="scroll-container">
@@ -61,4 +61,7 @@
   
   
     <app-about-us-modal *ngIf="aboutModal" (close)="aboutModal = false"></app-about-us-modal>
+    
+    <!-- <app-footer-modal [isOpen]="modalOpen" [title]="modalTitle" [content]="modalContent"
+    (close)="closeModal()"></app-footer-modal> -->
   </div>
