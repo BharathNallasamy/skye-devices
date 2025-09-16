@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class ShopPageComponent {
   showModal = false;
   preOrder = false;
+
+  openRazorpayLink() {
+    const url = "https://rzp.io/rzp/a6zfFd2f";    
+    window.open(url, '_self');
+  }
 }
