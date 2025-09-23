@@ -1,67 +1,61 @@
 <div class="px-4 sm:px-8 md:px-16 lg:px-40 xl:px-60 2xl:px-72">
-    <app-header></app-header>
-  
-    <div class="scroll-container">
-      <section class="overlap">
-        <app-first-page></app-first-page>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-dispay2 [contents2]="contents2[0]"></app-image-text-dispay2>
-      </section>
-  
-      <section class="overlap">
-        <app-image-display [image]="images[0]"></app-image-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-display [content]="contents[0]"></app-image-text-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-display [image]="images[1]"></app-image-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-display [content]="contents[1]"></app-image-text-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-dispay2 [contents2]="contents2[1]"></app-image-text-dispay2>
-      </section>
-  
-      <section class="overlap">
-        <app-image-display [image]="images[2]"></app-image-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-display [content]="contents[2]"></app-image-text-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-display [content]="contents[3]"></app-image-text-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-display [content]="contents[4]"></app-image-text-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-text-display [content]="contents[5]"></app-image-text-display>
-      </section>
-  
-      <section class="overlap">
-        <app-image-dispay2></app-image-dispay2>
-      </section>
-  
-      <section class="overlap">
-        <app-final-page></app-final-page>
-      </section>
-    </div>
-  
-  
-    <app-about-us-modal *ngIf="aboutModal" (close)="aboutModal = false"></app-about-us-modal>
-    
-    <!-- <app-footer-modal [isOpen]="modalOpen" [title]="modalTitle" [content]="modalContent"
-    (close)="closeModal()"></app-footer-modal> -->
+  <app-header></app-header>
+
+  <div class="scroll-container">
+    <section class="overlap">
+      <app-first-page></app-first-page>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-dispay2 [contents2]="contents2[0]"></app-image-text-dispay2>
+    </section>
+
+    <section class="overlap">
+      <app-image-display [image]="images[0]"></app-image-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-display [content]="contents[0]"></app-image-text-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-display [image]="images[1]"></app-image-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-display [content]="contents[1]"></app-image-text-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-dispay2 [contents2]="contents2[1]"></app-image-text-dispay2>
+    </section>
+
+    <section class="overlap">
+      <app-image-display [image]="images[2]"></app-image-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-display [content]="contents[2]"></app-image-text-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-display [content]="contents[3]"></app-image-text-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-display [content]="contents[4]"></app-image-text-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-text-display [content]="contents[5]"></app-image-text-display>
+    </section>
+
+    <section class="overlap">
+      <app-image-dispay2></app-image-dispay2>
+    </section>
+
+    <section class="overlap">
+      <app-final-page></app-final-page>
+    </section>
   </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MainService } from '../../service/main.service';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  constructor(public modalService: MainService) {}
   menuOpen = false;
   aboutModal = false;
   instagramUpdatesUrl = 'https://www.linkedin.com/company/skye-devices/';
@@ -13,4 +15,8 @@ export class HeaderComponent {
   openLink(url: string) {
     window.open(url, '_blank');
   }
+
+  modalOpen = false;
+  modalTitle = '';
+  modalContent = '';
 }

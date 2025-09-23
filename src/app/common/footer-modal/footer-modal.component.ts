@@ -12,26 +12,13 @@ import {
   templateUrl: './footer-modal.component.html',
   styleUrls: ['./footer-modal.component.scss'],
 })
-export class FooterModalComponent implements OnInit, OnDestroy {
-  // @Input() isOpen: boolean = false;
-  // @Input() title: string = '';
-  // @Input() content: string = '';
-  // @Output() close = new EventEmitter<void>();
+export class FooterModalComponent {
+  @Output() openModal = new EventEmitter<string>();
 
-  // ngOnInit(): void {
-  //   if (this.isOpen) {
-  //     document.body.style.overflow = 'hidden'; // disable background scroll
-  //   }
-  // }
-
-  // ngOnDestroy(): void {
-  //   document.body.style.overflow = ''; // restore scroll
-  // }
-
-  // onClose() {
-  //   this.close.emit();
-  // }
-
+  handleClick(type: string) {
+    this.openModal.emit(type);
+  }
+  
   @Input() isOpen: boolean = false;
   @Input() title: string = '';
   @Input() content: string = '';

@@ -11,8 +11,8 @@
 
     <!-- Middle Navigation Links -->
     <div class="nav-links">
-        <button type="button" class="linklike" (click)="openModal('contactUs')">contact us</button>
-        <button type="button" class="linklike" (click)="openModal('faq')">faq</button>
+        <button type="button" class="linklike" (click)="modalService.openModal('contactUs')">contact us</button>
+        <button type="button" class="linklike" (click)="modalService.openModal('faq')">faq</button>
         <a href="mailto:skyedevices@outlook.com" class="linklike">email</a>
         <button type="button" class="linklike" (click)="openLink(instagramUrl)">instagram</button>
         <button type="button" class="linklike" (click)="openLink(linkedinUrl)">linkedin</button>
@@ -20,13 +20,13 @@
 
     <!-- Footer Links -->
     <div class="footer-links">
-        <button type="button" class="linklike" (click)="openModal('terms')">terms & conditions</button>
-        <button type="button" class="linklike" (click)="openModal('privacy')">privacy policy</button>
-        <button type="button" class="linklike" (click)="openModal('refund')">cancellation & refund policy</button>
-        <button type="button" class="linklike" (click)="openModal('shipping')">shipping & delivery policy</button>
+        <button type="button" class="linklike" (click)="modalService.openModal('terms')">terms & conditions</button>
+        <button type="button" class="linklike" (click)="modalService.openModal('privacy')">privacy policy</button>
+        <button type="button" class="linklike" (click)="modalService.openModal('refund')">cancellation & refund policy</button>
+        <button type="button" class="linklike" (click)="modalService.openModal('shipping')">shipping & delivery policy</button>
     </div>
 
 </div>
 
-<app-footer-modal [isOpen]="modalOpen" [title]="modalTitle" [content]="modalContent"
-    (close)="closeModal()"></app-footer-modal>
+<!-- <app-footer-modal [isOpen]="modalOpen" [title]="modalTitle" [content]="modalContent"
+    (close)="closeModal()"></app-footer-modal> -->
