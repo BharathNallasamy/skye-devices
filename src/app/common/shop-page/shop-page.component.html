@@ -1,7 +1,7 @@
 <div class="shop-container">
     <!-- Back link -->
     <div class="back-link">
-        <a routerLink="/home"> &lt; back to home </a>
+        <a routerLink="/home" class="back-to-home"> &lt; back to home </a>
     </div>
 
     <div class="shop-content">
@@ -20,7 +20,8 @@
             <p class="special cursor-pointer" (click)="preOrder = true">Special price valid for a limited time</p>
             <div>
                 <h2 class="title">Skye</h2>
-                <p class="price">Rs. 4900.00</p>
+                <p class="price">Rs. 4165.00</p>
+                <p class="mrp"><s>MRP: Rs. 4900.00</s> &nbsp;<span class="discount">15% off</span></p>
             </div>
             <p class="desc">
                 Skye is a small, portable timer designed to help you stay present without
@@ -28,8 +29,7 @@
                 companion for mindful, distraction-free work.
             </p>
 
-            <p class="delivery-title">Estimated deliveries for pre-orders:</p>
-            <p class="delivery-date">December, 2025</p>
+            <p class="delivery-title">This batch ships from <b>November, 2025</b></p>
 
             <button type="button" class="link" (click)="showModal = true">View full specifications</button>
             <!-- <a href="#" class="link" (click)="showModal = true">View full specifications</a> -->

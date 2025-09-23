@@ -10,7 +10,7 @@ export class ShopPageComponent {
   preOrder = false;
 
   openRazorpayLink() {
-    const url = "https://rzp.io/rzp/a6zfFd2f";    
+    const url = "https://rzp.io/rzp/skyeone";
     window.open(url, '_self');
   }
 }

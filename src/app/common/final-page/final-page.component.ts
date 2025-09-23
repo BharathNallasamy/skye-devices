@@ -70,7 +70,7 @@ export class FinalPageComponent {
 
         <p class="font-bold mb-3">9. Who is Skye for?</p>
         <p class="mb-2">
-            +
+            Skye is for anyone who wants to protect their focus and spend more time on what truly matters, whether at work, in studies, in creative flow, or in daily life.
         </p>
 
         <p class="font-bold mb-3">10. How long does Skye’s battery last?</p>
