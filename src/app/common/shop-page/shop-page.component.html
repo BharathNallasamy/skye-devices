@@ -1,43 +1,66 @@
 <div class="shop-container">
-    <!-- Back link -->
-    <div class="back-link">
-        <a routerLink="/home" class="back-to-home"> &lt; back to home </a>
+  <!-- Back link -->
+  <div class="back-link">
+    <a routerLink="/home" class="back-to-home"> &lt; back to home </a>
+  </div>
+
+  <div class="shop-content">
+    <!-- Left Side -->
+    <div class="left-section">
+      <div>
+        <img
+          class="common_img_size"
+          src="assets/images/Order_Page.jpg"
+          alt="Skye Device"
+        />
+      </div>
     </div>
 
-    <div class="shop-content">
-        <!-- Left Side -->
-        <div class="left-section">
-            <div>
-                <img class="common_img_size" src="assets/images/Order_Page.jpg" alt="Skye Device" />
-            </div>
-            <p class="note">
-                Every confirmed pre-order will<br /> be delivered chronologically <br />with no exceptions.
-            </p>
-        </div>
+    <!-- Right Side -->
+    <div class="right-section">
+      <p class="special cursor-pointer" (click)="preOrder = true">
+        Special price valid for a limited time
+      </p>
+      <div>
+        <h2 class="title">Skye</h2>
+        <p class="price">
+          Rs. 4900.00 <s class="mrp">MRP: Rs. 5900.00</s>
+          <span class="discount">Rs. 1000 off</span>
+        </p>
+        <p class="gst-line">Rs. 4152.00 + GST (18%)</p>
+      </div>
+      <p class="desc">
+        Skye is a small, portable timer designed to help you stay present
+        without screens or distractions. Durable, minimal, and purposeful, it’s
+        your everyday companion for mindful, distraction-free work.
+      </p>
 
-        <!-- Right Side -->
-        <div class="right-section">
-            <p class="special cursor-pointer" (click)="preOrder = true">Special price valid for a limited time</p>
-            <div>
-                <h2 class="title">Skye</h2>
-                <p class="price">Rs. 4165.00</p>
-                <p class="mrp"><s>MRP: Rs. 4900.00</s> &nbsp;<span class="discount">15% off</span></p>
-            </div>
-            <p class="desc">
-                Skye is a small, portable timer designed to help you stay present without
-                screens or distractions. Durable, minimal, and purposeful, it’s your everyday
-                companion for mindful, distraction-free work.
-            </p>
+      <p class="delivery-title">
+        For both <b>Domestic & International</b> orders, this batch ships from
+        <b>November, 2025</b>
+      </p>
 
-            <p class="delivery-title">This batch ships from <b>November, 2025</b></p>
+      <p class="note">
+        Every confirmed pre-order will<br />
+        be delivered chronologically <br />with no exceptions.
+      </p>
 
-            <button type="button" class="link" (click)="showModal = true">View full specifications</button>
-            <!-- <a href="#" class="link" (click)="showModal = true">View full specifications</a> -->
+      <button type="button" class="link" (click)="showModal = true">
+        View full specifications
+      </button>
+      <!-- <a href="#" class="link" (click)="showModal = true">View full specifications</a> -->
 
-            <button class="preorder-btn" (click)="openRazorpayLink()">pre-order</button>
-        </div>
+      <button class="preorder-btn" (click)="openRazorpayLink()">
+        pre-order
+      </button>
     </div>
-
+  </div>
 </div>
-<app-product-spec-modal *ngIf="showModal" (close)="showModal = false"></app-product-spec-modal>
-<app-pre-ordering-modal *ngIf="preOrder" (close)="preOrder = false"></app-pre-ordering-modal>
+<app-product-spec-modal
+  *ngIf="showModal"
+  (close)="showModal = false"
+></app-product-spec-modal>
+<app-pre-ordering-modal
+  *ngIf="preOrder"
+  (close)="preOrder = false"
+></app-pre-ordering-modal>

@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .shop-container {
   height: calc(100vh - 2.4vh);
   padding: 2rem 4rem;
@@ -5,18 +13,26 @@
 }
 
 .back-link {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-
-  a {
-    color: #555555;
-    font-size: 22px;
-    text-decoration: none;
-  }
+   display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;               
+  font-size: 18px;            
+  font-weight: 600;
+  color: #1d70b8;             
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid #1d70b8;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
 .back-link a:hover {
-  text-decoration: underline;
+  background-color: #1d70b8;
+  color: #fff;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
 
 .shop-content {
@@ -33,29 +49,32 @@
 
 /* Left Section */
 .left-section {
+  flex: 1.2;                
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  flex: 1;
+  flex-direction: column;
   text-align: center;
 }
 
 .left-section img {
   width: 100%;
-  max-width: 320px;
-  border-radius: 12px;
+  max-width: 420px;  
+  height: 420px;        
+  border-radius: 18px;       
   margin-bottom: 1rem;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); 
+  object-fit: cover;
 }
 
 .note {
   font-size: 22px;
-  color: #555555;
+  color: black;
 }
 
 /* Right Section */
 .right-section {
-  flex: 1.5;
+  flex: 1.3;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -81,6 +100,10 @@
 
   @media (max-width: 768px) {
     text-align: center;
+    .left-section img {
+    max-width: 300px;
+    height: 260px;   
+  }
   }
 }
 
@@ -88,56 +111,80 @@
   font-size: 34px;
   margin: 0.5rem 0;
   color: #555555;
+  font-weight: 600;
 }
 
 .mrp {
-  font-size: 18px;
-  margin: 0.5rem 0;
-  color: #555555;
+  font-size: 16px;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
 }
 
 .discount {
   color: #DD0505;
+  font-size: 16px;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 .desc {
   font-size: 22px;
-  color: #555555;
+  color: black;
   line-height: 1.6;
+}
+.gst-line {
+  color: #1d70b8;
+  font-size: 18px;
+  margin-top: -5px;
 }
 
 .delivery-title {
   font-size: 22px;
   margin-top: 1rem;
-  color: #555555;
+  color: black;
 }
 
 .delivery-date {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #555555;
+  color: black;
 }
 
 .link {
-  font-size: 22px;
-  color: #555555;
-  text-decoration: underline;
-  margin-top: 1rem;
-  text-align: left;
+  font-size: 1rem;             
+  font-weight: 600;            
+  color: #1d70b8; 
+  margin-top: 15px;             
+  background: transparent;     
+  border: 2px solid #1d70b8;  
+  padding: 12px 24px;        
+  border-radius: 8px;         
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;       
+  width: 100%;                 
+}
+
+.link:hover {
+  background: #1d70b8;
+  color: #fff;                 
 }
 
 .preorder-btn {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   background: #1d70b8;
   color: #fff;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: 24px;
+  border-radius: 8px; 
   cursor: pointer;
   transition: background 0.3s ease;
-  width: fit-content;
+  width: 100%;
+  text-align: center;
 }
 
 .preorder-btn:hover {
