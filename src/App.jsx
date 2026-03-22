@@ -15,14 +15,16 @@ function App() {
     <Router>
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/research" element={<ResearchPage />} />
-        <Route path="/corporate" element={<CorporatePage />} />
-        <Route path="/faq" element={<FAQPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-      </Routes>
+      <main className="mt-[clamp(90px,10vh,140px)]">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/research" element={<ResearchPage />} />
+          <Route path="/corporate" element={<CorporatePage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/shop" element={<ShopPage />} />
+        </Routes>
+      </main>
     </Router>
   );
 }

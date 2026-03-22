@@ -75,12 +75,12 @@ export default function ShopPage() {
               <div className="mt-8">
 
                 <p className="text-2xl font-semibold text-gray-900">
-                  Rs. 5900.00
+                  Rs. 4900.00
                 </p>
 
                 <p className="text-gray-500 text-sm mt-1">
-                  Rs. 5000 + Rs. 900 (18% GST)
-                </p>
+    Rs. 4100 + (<span className="text-red-500 font-medium">18% GST</span>)
+  </p>
 
               </div>
 
