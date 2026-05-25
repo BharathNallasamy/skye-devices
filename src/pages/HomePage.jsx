@@ -12,21 +12,24 @@ import Features from "../sub-section/Features";
 import Testimonials from "../sub-section/Testimonials";
 import Gift from "../sub-section/Gift";
 import Footer from "../components/Footer";
-
+import Corporates from "../sub-section/Corporate";
+import Breathing from "../sub-section/Breathing";
+import Use from "../sub-section/Use";
+import Mode from "../sub-section/Modes"
+import Science from "../sub-section/Science"
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <MicroMeditation />
-      <AncientIndia />
-      <HowItWorks />
-      <Comparison />
-      <Modes />
-      <NoPhone />
       <Press />
+
+      <Testimonials /> 
+    <Science />
+      <Mode />
+      <Use />
+      <Breathing />
       <Founders />
-      <Features />
-      <Testimonials />
+      <Corporates />
       <Gift />
       <Footer />
     </>
