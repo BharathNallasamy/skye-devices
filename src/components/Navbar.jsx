@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white">
+    <header className="w-full bg-white fixed top-0 left-0 z-50">
 
       {/* CONTAINER */}
       <div className="max-w-[1800px] mx-auto px-[clamp(20px,5vw,80px)] py-[clamp(14px,2vh,24px)] flex items-center justify-between">
